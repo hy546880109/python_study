@@ -1,4 +1,4 @@
-#装饰器统计运行时间
+#装饰器统计程序运行时间
 from datetime import datetime
 from time import sleep
 
