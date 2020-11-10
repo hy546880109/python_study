@@ -29,13 +29,13 @@ try:
     print("写入执行时间:"+str((now_time-init_time).seconds)+"秒")
     print("读取执行时间:"+str((now_read_time-init_read_time).seconds)+"秒")
     print('执行结束！！！')
-#如果出现错误则捕获错误并打印
+# #如果出现错误则捕获错误并打印
 except Exception as e:
     print('出现异常')
     print(e)
     error = traceback.format_exc()
     print(error)
-#不管是否错误都执行关闭文件
-finally:
-    f.close()
+# #不管是否错误都执行关闭文件
+# finally:
+#     f.close()
 
