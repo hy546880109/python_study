@@ -17,9 +17,14 @@ str1 = case_list.split(' ')
 str2 = value_list.split(' ')
 def get_case(step=step, item=str1, value=str2):
     '''输出笛卡尔用例集合'''
-    for i in itertools.product(item, value):
-        print(f'{step}'.join(i))
+    count = 0
+    sum = itertools.product(item, value)
+    for i in sum:
+        count += 1
+        yongli = step.join(i)
+        print(f'{count}.{yongli}')
 
 if __name__ == '__main__':
     get_case()
+
 
