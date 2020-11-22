@@ -23,3 +23,4 @@ def fun(n):
 for i in range(1,n+1):
     new_list.append(fun(n))
 print(new_list)
+
