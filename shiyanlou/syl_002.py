@@ -7,6 +7,7 @@ class Permutations(object):
             return False
         list(str1).sort
         str1 = ''.join(str1)
+        
         return str1 == str2
         
 
